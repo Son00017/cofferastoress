@@ -18,3 +18,55 @@
     text-transform: uppercase;
   }
 }
+@include responsive(six-four) {
+  .sitenav {
+    position: absolute;
+    top: 8.5rem;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding-top: 4rem;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(254, 252, 247, 0.504981)),
+      color-stop(55.94%, #fefcf7)
+    );
+    background: -o-linear-gradient(
+      top,
+      rgba(254, 252, 247, 0.504981) 0%,
+      #fefcf7 55.94%
+    );
+    background: linear-gradient(
+      180deg,
+      rgba(254, 252, 247, 0.504981) 0%,
+      #fefcf7 55.94%
+    );
+    -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+    -ms-transform: matrix(1, 0, 0, -1, 0, 0);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+  .sitenav__list {
+    -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+    -ms-transform: matrix(1, 0, 0, -1, 0, 0);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 4rem;
+  }
+  .sitenav__item:not(:last-child) {
+    margin: 0;
+    margin-bottom: 3.2rem;
+  }
+  .sitenav__link {
+    font-size: $h4-size;
+    color: $main-color;
+    text-transform: capitalize;
+    font-family: $primary-font;
+  }
+}

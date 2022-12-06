@@ -1,0 +1,81 @@
+footer {
+  // padding: 0 4.7rem;
+  .container {
+    margin-bottom: 13.5rem;
+    padding: 0 2rem;
+  }
+}
+.icon-list__link:hover {
+  svg {
+    path {
+      fill: $pale-orange;
+    }
+  }
+}
+.footer__container {
+  padding: 4.7rem 8.5rem;
+  background-color: $main-color;
+}
+.footernav {
+  display: flex;
+  &__list {
+    margin-left: 10.3rem;
+    display: flex;
+    gap: 3.3rem;
+    @include responsive(one-zero) {
+      margin-left: 3rem;
+      gap: 1.5rem;
+    }
+    @include responsive(eight-five) {
+      // margin-left: 3rem;
+      gap: 3.3rem;
+    }
+    @include responsive(five-one) {
+      flex-direction: column;
+      align-items: center;
+    }
+    a {
+      color: $light-white;
+      font-size: $nav-font-size;
+      line-height: $nav-line-hight;
+      font-weight: 700;
+      text-transform: uppercase;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  @include responsive(eight-five) {
+    flex-direction: column;
+    margin-bottom: 6.7rem;
+    align-items: center;
+    &__list {
+      margin-left: 0;
+    }
+  }
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  @include responsive(eight-five) {
+    flex-direction: column;
+    align-items: center;
+  }
+  .icon-list {
+    display: flex;
+    gap: 2.4rem;
+    @include responsive(one-zero) {
+      // margin-left: 3rem;
+      gap: 1.5rem;
+    }
+    @include responsive(eight-five) {
+      // margin-left: 3rem;
+      gap: 2.4rem;
+    }
+  }
+}
+.logo-block {
+  @include responsive(eight-five) {
+    margin-bottom: 3.3rem;
+  }
+}

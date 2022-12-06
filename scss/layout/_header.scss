@@ -1,0 +1,18 @@
+.hidden {
+  display: block;
+  @include responsive(six-four) {
+    display: none;
+  }
+}
+.toggele-btn {
+  display: none;
+  @include responsive(six-four) {
+    display: block;
+  }
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4.3rem 2rem;
+}

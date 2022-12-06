@@ -1,0 +1,188 @@
+.create-hero {
+  background-image: url(../images/jpg/create_hero_bg.jpg);
+
+  margin-bottom: 16.8rem;
+}
+
+.create-block {
+  background-color: $main-color;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  border-radius: 1rem;
+  .create-cyclr {
+    background-color: none;
+    background: none;
+  }
+  h3 {
+    color: $light-white;
+  }
+  p {
+    color: $light-white;
+  }
+}
+.cofe-type {
+  margin-bottom: 16.8rem;
+  //   background-color: aqua;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__lists {
+    max-width: 25.5rem;
+  }
+  &__item {
+    border-bottom: 1px solid $light-black;
+    padding-bottom: 2.4rem;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+  &__link {
+    display: flex;
+    gap: 2.85rem;
+    @include responsive(one-zero) {
+      gap: 0.1rem;
+    }
+    &:hover {
+      span {
+        color: $light-black;
+      }
+    }
+    span {
+      font-family: $primary-font;
+      font-style: normal;
+      font-weight: 900;
+      font-size: $h4-size;
+      line-height: $h4-line-hight;
+      color: $main-color;
+
+      @include responsive(one-zero) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  @include responsive(eight-five) {
+    &__container {
+      padding: 0 2rem;
+    }
+    &__lists {
+      display: none;
+    }
+    &__link {
+      gap: 1rem;
+    }
+  }
+  @include responsive(four-three) {
+    &__container {
+      padding: 0;
+    }
+  }
+}
+.making-plan {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 73rem;
+  &__block {
+    div {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 2.3rem;
+    margin-bottom: 8.8rem;
+
+    @include responsive(one-zero) {
+      gap: 1rem;
+    }
+  }
+  &__item {
+    cursor: pointer;
+    padding: 3.2rem 2.8rem 8.4rem;
+    background: #f4f1eb;
+    border-radius: 8px;
+    @include responsive(one-zero) {
+      max-width: 22.5rem;
+    }
+    &:hover {
+      background: $primary-color;
+      .list {
+        &__title {
+          color: $light-white;
+        }
+        &__desc {
+          color: $light-white;
+        }
+      }
+    }
+    &:active {
+      background: $pale-orange;
+      .list {
+        &__title {
+          color: $main-color;
+        }
+        &__desc {
+          color: $main-color;
+        }
+      }
+    }
+  }
+  &__title {
+    font-size: $h2-size;
+    line-height: $h2-line-hight;
+    margin-bottom: 5.6rem;
+    color: $main-color;
+  }
+  .list {
+    &__title {
+      font-size: $h4-size;
+      line-height: $h4-line-hight;
+      margin-bottom: 2.4rem;
+      color: $main-color;
+    }
+    &__desc {
+      color: $main-color;
+    }
+  }
+  @include responsive(eight-five) {
+    &__title {
+      font-size: 3.2rem;
+      line-height: 4.8rem;
+    }
+  }
+  @include responsive(six-four) {
+    &__list {
+      flex-direction: column;
+      margin-bottom: 11rem;
+      gap: 1.6rem;
+    }
+    &__item {
+      max-width: 100%;
+    }
+    &__title {
+      line-height: 2.8rem;
+    }
+  }
+}
+.order_summary {
+  padding: 2.7rem 6.4rem;
+  margin-bottom: 4rem;
+  background-color: $main-color;
+  border-radius: 1rem;
+  &__sub-title {
+    color: #ffffff;
+    opacity: 0.5;
+    margin-bottom: 8px;
+  }
+  &__title {
+    font-size: $h4-size;
+    line-height: 1.67;
+    font-family: $primary-font;
+    font-weight: 900;
+  }
+}
+.div__btn {
+  display: flex;
+  justify-content: flex-end;
+}

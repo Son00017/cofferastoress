@@ -1,0 +1,20 @@
+.sitenav {
+  &__list {
+    display: flex;
+  }
+  &__item:not(:last-child) {
+    margin-right: 3.3rem;
+  }
+  &__item:hover {
+    a {
+      color: $main-color;
+    }
+  }
+  &__link {
+    font-size: $nav-font-size;
+    line-height: $nav-line-hight;
+    font-weight: 700;
+    color: $light-black;
+    text-transform: uppercase;
+  }
+}

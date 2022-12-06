@@ -1,0 +1,441 @@
+.hero {
+  &__title {
+    font-size: $h1-size;
+    line-height: $h1-line-hight;
+    margin-bottom: 3.2rem;
+    font-family: $primary-font;
+    font-weight: 900;
+  }
+  &__description {
+    margin-bottom: 5.6rem;
+  }
+  @include responsive(eight-five) {
+    &__title {
+      font-size: 4.8rem;
+    }
+  }
+  @include responsive(six-four) {
+    &__title {
+      text-align: center;
+      font-size: 4.5rem;
+    }
+    &__description {
+      text-align: center;
+      margin-bottom: 5.6rem;
+    }
+  }
+  @include responsive(four-three) {
+    &__title {
+      text-align: center;
+      font-size: 4rem;
+    }
+    &__description {
+      text-align: center;
+      margin-bottom: 5.6rem;
+      font-size: 15px;
+    }
+  }
+}
+.wrapper {
+  background-image: url(../images/png/hero-bg.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 11.7rem 8.5rem;
+  @include responsive(one-zero) {
+    background-position: center;
+  }
+  @include responsive(eight-five) {
+    padding: 10.4rem 5.8rem;
+  }
+  @include responsive(six-four) {
+    align-items: center;
+  }
+  &__title {
+    max-width: 49.3rem;
+    @include responsive(eight-five) {
+      max-width: 39.2rem;
+    }
+    @include responsive(six-four) {
+      max-width: 32.9rem;
+    }
+  }
+  &__text {
+    max-width: 44rem;
+    @include responsive(eight-five) {
+      max-width: 39.8rem;
+    }
+    @include responsive(six-four) {
+      max-width: 32.9rem;
+    }
+  }
+  @include responsive(four-three) {
+    padding: 10rem 2.4rem;
+    &__title {
+      max-width: 27.9rem;
+    }
+    &__description {
+      max-width: 27.9rem;
+    }
+  }
+}
+.collection {
+  //   background-color: blueviolet;
+  padding: {
+    top: 13.6rem;
+    bottom: 20rem;
+  }
+  &__container {
+    padding: 0 8.5rem;
+    padding-top: 12.6rem;
+    background-image: url(../images/svg/collection-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 87%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    gap: 3rem;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    text-align: center;
+    color: $main-color;
+    margin-bottom: 2.4rem;
+    font-family: $primary-font;
+    font-weight: 900;
+  }
+  &__desc {
+    text-align: center;
+    color: $main-color;
+  }
+  &__img {
+    margin-bottom: 7.2rem;
+  }
+  @include responsive(eight-five) {
+    padding-top: 10rem;
+    &__container {
+      padding: 0 5.8rem;
+      padding-top: 8.9rem;
+      grid-template-columns: repeat(auto-fit, minmax(57.3rem, 1fr));
+      background-position: top center;
+    }
+
+    &__img {
+      margin-bottom: 0;
+      margin-right: 3.6rem;
+    }
+    &__item {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__title {
+      text-align: start;
+    }
+    &__desc {
+      text-align: start;
+    }
+  }
+  @include responsive(seven-five) {
+    &__container {
+      padding-right: 0;
+      padding-left: 0;
+      padding-top: 5.9rem;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  @include responsive(six-four) {
+    &__container {
+      grid-template-columns: repeat(1, 28.2rem);
+      place-content: center;
+    }
+    &__img {
+      margin-bottom: 2.4rem;
+      margin-right: 0;
+    }
+    &__item {
+      flex-direction: column;
+      //   justify-content: space-between;
+    }
+    &__title {
+      margin-bottom: 1.6rem;
+      text-align: center;
+    }
+    &__desc {
+      text-align: center;
+    }
+  }
+}
+
+.choosing {
+  margin-bottom: 20rem;
+  &__container {
+    padding: 0 8.5rem;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  &__bg {
+    top: 0;
+    border: 1px solid $main-color;
+    width: 100%;
+    background-color: $main-color;
+    position: absolute;
+    border-radius: 8px;
+    height: 60rem;
+    z-index: -1;
+  }
+  &__wrapper-text {
+    max-width: 54rem;
+  }
+  &__title {
+    margin-bottom: 3.2rem;
+    font-size: $h2-size;
+    line-height: $h2-line-hight;
+    font-family: $primary-font;
+    font-weight: 900;
+  }
+  &__desc {
+    text-align: center;
+    margin-bottom: 8.6rem;
+  }
+  &__card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+  .card {
+    &__item {
+      background-color: $primary-color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 7.2rem 4.7rem 4.8rem;
+      border-radius: 8px;
+    }
+    &__img {
+      margin-bottom: 5.6rem;
+    }
+    &__title {
+      text-align: center;
+      margin-bottom: 2.4rem;
+      font-family: $primary-font;
+      font-weight: 900;
+    }
+    &__desc {
+      text-align: center;
+    }
+  }
+  @include responsive(one-one-five) {
+    &__bg {
+      height: 68rem;
+    }
+    &__card {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__title {
+      text-align: start;
+    }
+    &__desc {
+      text-align: start;
+    }
+    .card {
+      &__item {
+        flex-direction: row;
+        align-items: center;
+        gap: 5.6rem;
+        padding: 4.8 4.8rem 4.1rem 7rem;
+      }
+      &__title {
+        margin-bottom: 1.6rem;
+      }
+      &__img {
+        margin-bottom: 0;
+      }
+    }
+  }
+  @include responsive(eight-five) {
+    .choosing {
+      &__bg {
+        height: 68rem;
+      }
+      &__container {
+        padding: 6.4rem 5.7rem 0 5.7rem;
+      }
+      &__title {
+        font-size: 3.2rem;
+      }
+      &__wrapper-text {
+        max-width: 54rem;
+      }
+    }
+    .card {
+      &__item {
+        div {
+          max-width: 34.4rem;
+        }
+      }
+    }
+  }
+  @include responsive(six-four) {
+    .choosing {
+      &__container {
+        padding: 6.4rem 5.4rem 0 5.4rem;
+      }
+      &__bg {
+        height: 90rem;
+      }
+    }
+    &__card {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+      &__item {
+        flex-direction: column;
+        align-items: center;
+        gap: 5.6rem;
+        padding: 7rem 3.3rem 5.1rem 3.3rem;
+      }
+      &__title {
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+  @include responsive(five-one) {
+    .choosing {
+      &__bg {
+        height: 100rem;
+      }
+    }
+  }
+  @include responsive(four-three) {
+    .choosing {
+      &__container {
+        padding: 6.4rem 2.4rem 0 2.4rem;
+      }
+    }
+  }
+  @include responsive(three-five) {
+    .choosing {
+      &__bg {
+        height: 110rem;
+      }
+    }
+  }
+}
+.working {
+  &__container {
+    padding: 0 8.5rem;
+  }
+  &__title {
+    color: $light-black;
+    font-size: $h3-size;
+    line-height: $h3-line-hight;
+    margin-bottom: 8rem;
+    font-family: $primary-font;
+    font-weight: 900;
+  }
+  &__btn-block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width: 79.1rem;
+
+    .line {
+      bottom: 90%;
+      position: absolute;
+      z-index: 0;
+      border: 2px solid #fdd6ba;
+      width: 97%;
+      left: 1.5%;
+    }
+    .cyclr-btn {
+      position: relative;
+      z-index: 1;
+      border: 2px solid #0e8784;
+      background-color: #fff;
+      width: 3.1rem;
+      height: 3.1rem;
+      top: -1.5rem;
+      border-radius: 50%;
+    }
+  }
+  &__picking-block {
+    display: flex;
+    gap: 9.5rem;
+
+    margin-bottom: 6.4rem;
+    color: $main-color;
+    div {
+      max-width: 28.5rem;
+    }
+  }
+  &__num {
+    font-size: 7.2rem;
+    line-height: 1;
+    color: $pale-orange;
+    margin-bottom: 3.8rem;
+  }
+  &__titles {
+    font-size: $h3-size;
+    line-height: $h3-line-hight;
+    margin-bottom: 4.3rem;
+    width: 19rem;
+    font-family: $primary-font;
+    font-weight: 900;
+  }
+  @include responsive(eight-five) {
+    &__container {
+      padding: 0 2rem;
+    }
+    &__btn-block {
+      max-width: 59.4rem;
+    }
+    &__picking-block {
+      gap: 1rem;
+    }
+    &__titles {
+      font-size: 2.8rem;
+    }
+  }
+  @include responsive(six-four) {
+    &__container {
+      padding: 0 2rem;
+    }
+    &__btn-block {
+      display: none;
+    }
+    &__picking-block {
+      gap: 5.6rem;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      div {
+        max-width: 32.7rem;
+      }
+    }
+    &__titles {
+      width: 100%;
+      padding-right: 0;
+      font-size: 2.8rem;
+    }
+    &__btn-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  margin-bottom: 20rem;
+}
+
+@include responsive(three-five) {
+  html {
+    font-size: 40%;
+  }
+}

@@ -1,0 +1,53 @@
+@mixin container($max-width, $padding) {
+  max-width: $max-width;
+  padding: $padding;
+}
+@mixin font($font-family, $fons-size, $line-hight, $font-weight) {
+  font-size: $fons-size;
+  font-family: $font-family;
+  line-height: $line-hight;
+  font-weight: $font-weight;
+}
+
+@mixin responsive($breackpoint) {
+  @if $breackpoint == one-one-five {
+    @media only screen and (max-width: 1150px) {
+      @content;
+    }
+  }
+  @if $breackpoint == one-zero {
+    @media only screen and (max-width: 1000px) {
+      @content;
+    }
+  }
+  @if $breackpoint == eight-five {
+    @media only screen and (max-width: 850px) {
+      @content;
+    }
+  }
+  @if $breackpoint == seven-five {
+    @media only screen and (max-width: 750px) {
+      @content;
+    }
+  }
+  @if $breackpoint == six-four {
+    @media only screen and (max-width: 640px) {
+      @content;
+    }
+  }
+  @if $breackpoint == five-one {
+    @media only screen and (max-width: 510px) {
+      @content;
+    }
+  }
+  @if $breackpoint == four-three {
+    @media only screen and (max-width: 430px) {
+      @content;
+    }
+  }
+  @if $breackpoint == three-five {
+    @media only screen and (max-width: 350px) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.btn {
+  padding: 1.5rem 3.1rem;
+  background-color: $primary-color;
+  border-radius: 6px;
+  color: $light-white;
+  &:hover {
+    background-color: #66d2cf;
+  }
+  &:active {
+    opacity: 0.5;
+  }
+}

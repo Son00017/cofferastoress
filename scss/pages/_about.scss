@@ -1,0 +1,284 @@
+.heros {
+  &__container {
+    background-image: url(../images/jpg/About__hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 13.7rem 8.5rem;
+    background-position: center;
+    border-radius: 1rem;
+  }
+  &__title {
+    font-size: $h2-size;
+    line-height: $h2-line-hight;
+    margin-bottom: 2.4rem;
+    font-weight: 900;
+    font-family: $primary-font;
+  }
+  &__desc {
+    max-width: 44rem;
+  }
+  @include responsive(eight-five) {
+    &__container {
+      padding: 11.8rem 5.8rem;
+    }
+  }
+  &__title {
+    font-size: 3.2rem;
+  }
+}
+.commitment {
+  .container {
+    display: flex;
+    align-items: center;
+    padding: 16.8rem 10.5rem;
+    gap: 12.5rem;
+  }
+
+  &__title {
+    color: $main-color;
+    font-size: $h3-size;
+    line-height: $h3-line-hight;
+    margin-bottom: 3.2rem;
+  }
+  &__text {
+    color: $main-color;
+  }
+  @include responsive(one-one-five) {
+    .container {
+      padding: 14.4rem 7rem;
+      gap: 10rem;
+    }
+  }
+  @include responsive(one-zero) {
+    .container {
+      padding: 14.4rem 4rem;
+      gap: 6.9rem;
+    }
+    &__img {
+      img {
+        max-width: 40.1rem;
+      }
+    }
+  }
+  @include responsive(eight-five) {
+    &__img {
+      img {
+        max-width: 28.1rem;
+      }
+    }
+    .container {
+      padding: 14.4rem 2.4rem;
+    }
+  }
+  @include responsive(seven-five) {
+    .container {
+      gap: 4.8rem;
+    }
+    &__img {
+      img {
+        max-width: 25.1rem;
+      }
+    }
+  }
+  @include responsive(six-four) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+    &__img {
+      img {
+        max-width: 32.7rem;
+        height: 40rem;
+      }
+    }
+  }
+  @include responsive(four-three) {
+    &__img {
+      img {
+        max-width: 30.7rem;
+        height: auto;
+      }
+    }
+  }
+}
+.uncampermising {
+  // margin-top: 14rem;
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: {
+      top: 0;
+      bottom: 7.6rem;
+      left: 8.5rem;
+      right: 8.5rem;
+    }
+  }
+  &__wrapper {
+    padding-top: 16.8rem;
+    max-width: 54rem;
+  }
+  .bg-un {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 47.4rem;
+    border-radius: 1rem;
+    background-color: $main-color;
+    bottom: 0;
+    left: 0;
+  }
+  &__title {
+    font-size: $h2-size;
+    line-height: $h2-line-hight;
+    font-weight: 900;
+    font-family: $primary-font;
+    margin-bottom: 3.2rem;
+  }
+  @include responsive(one-zero) {
+    &__container {
+      flex-direction: column-reverse;
+      align-items: center;
+      img {
+        width: 57.3rem;
+        height: 32rem;
+        margin-bottom: 6.4rem;
+      }
+    }
+    &__wrapper {
+      padding: 0;
+      text-align: center;
+    }
+
+    .bg-un {
+      height: 48.8rem;
+    }
+  }
+  @include responsive(one-zero) {
+    &__container {
+      padding: 0 6.1rem 6.7rem;
+    }
+    &__title {
+      font-size: 3.2rem;
+    }
+  }
+  @include responsive(seven-five) {
+    &__container {
+      padding: 0 2.4rem 6.7rem;
+    }
+  }
+  @include responsive(six-four) {
+    &__container {
+      img {
+        width: 37.9rem;
+        height: 26rem;
+        margin-bottom: 6.4rem;
+      }
+    }
+    .bg-un {
+      height: 50.9rem;
+    }
+  }
+  @include responsive(four-three) {
+    &__container {
+      img {
+        width: 27.9rem;
+        height: 15.6rem;
+        margin-bottom: 6.4rem;
+      }
+    }
+    &__title {
+      font-size: 2.8rem;
+      line-height: 1;
+    }
+    .bg-un {
+      height: 50.9rem;
+    }
+  }
+}
+.headquarters {
+  padding: 16.8rem 0;
+  .container {
+    padding: 0 10.5rem;
+  }
+  &__title {
+    font-size: $h4-size;
+    line-height: $h4-line-hight;
+    margin-bottom: 7.2rem;
+    color: $light-black;
+    font-family: $primary-font;
+    font-weight: 900;
+  }
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 104.5rem;
+    gap: 9.5rem;
+  }
+  &__card-item {
+    width: 33%;
+    h2 {
+      font-size: $h3-size;
+      line-height: $h3-line-hight;
+      color: $main-color;
+      font-family: $primary-font;
+      font-weight: 900;
+      margin-bottom: 2.4rem;
+    }
+  }
+  .card__ican {
+    margin-bottom: 4.5rem;
+  }
+  address {
+    color: $main-color;
+  }
+  @include responsive(one-zero) {
+    &__card {
+      gap: 6.5rem;
+    }
+    .container {
+      padding: 0 7rem;
+    }
+  }
+  @include responsive(eight-five) {
+    &__card-item {
+      h2 {
+        font-size: $h4-size;
+        line-height: 3.6rem;
+      }
+    }
+    .container {
+      padding: 0 2rem;
+    }
+    &__card {
+      gap: 1rem;
+    }
+  }
+  @include responsive(six-four) {
+    &__card {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    &__card-item {
+      width: 32.6rem;
+      img {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+    address {
+      margin-bottom: 8rem;
+    }
+  }
+  @include responsive(four-three) {
+    &__card-item {
+      h2 {
+        font-size: 2.8rem;
+        line-height: 3.6rem;
+      }
+    }
+  }
+}
